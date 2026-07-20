@@ -1,0 +1,81 @@
+[
+  {
+    "id": "ko_001",
+    "language": "ko",
+    "term": "킹받다",
+    "variants": ["킹받네", "킹받음", "킹받아"],
+    "meaning": "매우 열받거나 약이 오르다",
+    "standard_expression": "정말 화가 난다",
+    "register": "internet",
+    "intensity": 4,
+    "example": "이거 진짜 킹받네",
+    "source": "manual curation",
+    "review_status": "verified"
+  },
+  {
+    "id": "ko_002",
+    "language": "ko",
+    "term": "억까",
+    "variants": ["억까하다", "억까네"],
+    "meaning": "억지로 비난하거나 깎아내리는 행위",
+    "standard_expression": "부당하게 비난하다",
+    "register": "internet",
+    "intensity": 3,
+    "example": "그건 너무 억까 아니야?",
+    "source": "manual curation",
+    "review_status": "verified"
+  },
+  {
+    "id": "ko_003",
+    "language": "ko",
+    "term": "갓생",
+    "variants": ["갓생살기", "갓생 산다"],
+    "meaning": "부지런하고 모범적으로 사는 생활",
+    "standard_expression": "성실한 생활",
+    "register": "internet",
+    "intensity": 2,
+    "example": "이번 달부터 갓생 산다",
+    "source": "manual curation",
+    "review_status": "verified"
+  },
+  {
+    "id": "en_001",
+    "language": "en",
+    "term": "slay",
+    "variants": ["slayed", "slaying"],
+    "meaning": "to perform exceptionally well or look impressive",
+    "standard_expression": "do exceptionally well",
+    "register": "informal",
+    "intensity": 4,
+    "example": "You absolutely slayed that presentation.",
+    "source": "manual curation",
+    "review_status": "verified"
+  },
+  {
+    "id": "en_002",
+    "language": "en",
+    "term": "sus",
+    "variants": ["sussy"],
+    "meaning": "suspicious or untrustworthy",
+    "standard_expression": "suspicious",
+    "register": "internet",
+    "intensity": 2,
+    "example": "That explanation sounds sus.",
+    "source": "manual curation",
+    "review_status": "verified"
+  },
+  {
+    "id": "en_003",
+    "language": "en",
+    "term": "no cap",
+    "variants": ["nocap"],
+    "meaning": "used to emphasize that something is truthful",
+    "standard_expression": "honestly",
+    "register": "informal",
+    "intensity": 3,
+    "example": "That was the best meal ever, no cap.",
+    "source": "manual curation",
+    "review_status": "verified"
+  }
+]
+

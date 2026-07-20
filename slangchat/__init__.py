@@ -1,0 +1,2 @@
+"""SlangChat core package."""
+
