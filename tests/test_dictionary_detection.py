@@ -47,7 +47,10 @@ class DictionaryDetectionTests(unittest.TestCase):
     def test_does_not_split_prefix_without_dictionary_match(self) -> None:
         self.assertEqual(self.detector.detect("개인 일정이 완전히 바뀌었다"), [])
 
+    def test_does_not_treat_unproductive_syllables_as_prefixes(self) -> None:
+        self.assertEqual(self.detector.detect("존킹받네"), [])
+        self.assertEqual(self.detector.detect("씨킹받네"), [])
+
 
 if __name__ == "__main__":
     unittest.main()
-

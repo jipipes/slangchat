@@ -9,7 +9,9 @@ from slangchat.detection.models import DetectionResult, MatchType
 from slangchat.detection.normalizer import normalize_text
 
 
-KOREAN_EMPHASIS_PREFIXES = ("완전", "개", "핵", "존", "씨")
+# Only broadly productive intensifiers belong here. Lexicalized forms such as
+# "존맛" or profanity-derived expressions must be curated as dictionary entries.
+KOREAN_EMPHASIS_PREFIXES = ("완전", "개", "핵")
 
 
 @dataclass(frozen=True)
@@ -108,4 +110,3 @@ class DictionarySlangDetector:
         if prefix:
             expression = rf"{re.escape(prefix)}\s*{escaped_surface}"
         return re.compile(rf"(?<![\w]){expression}(?![\w])", re.IGNORECASE)
-

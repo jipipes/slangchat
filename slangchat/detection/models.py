@@ -8,6 +8,7 @@ from pydantic import BaseModel, ConfigDict, Field
 class MatchType(str, Enum):
     DICTIONARY_EXACT = "dictionary_exact"
     DICTIONARY_VARIANT = "dictionary_variant"
+    MORPHOLOGY_LEMMA = "morphology_lemma"
 
 
 class DetectionResult(BaseModel):
@@ -24,4 +25,3 @@ class DetectionResult(BaseModel):
     confidence: float = Field(ge=0.0, le=1.0)
     start: int = Field(ge=0)
     end: int = Field(ge=0)
-
