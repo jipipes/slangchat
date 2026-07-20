@@ -12,7 +12,10 @@ dev = [
   "pytest>=8.2,<9",
 ]
 
+[tool.setuptools.packages.find]
+include = ["slangchat*"]
+exclude = ["data*", "scripts*", "tests*"]
+
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
-
