@@ -1,4 +1,4 @@
-[한국어](README.md) | English
+<p align="right"><a href="README.md">한국어</a> | English</p>
 
 # SlangChat
  
