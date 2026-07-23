@@ -2,7 +2,7 @@
 
 # SlangChat
  
-A portfolio project that detects Korean and English informal/slang expressions using rule-based normalization, morphological analysis, dictionary lookup, and vector search, and recommends contextually appropriate responses.
+Slangchat is a multilingual NLP system that combines rule-based normalization, morphological analysis, dictionary matching, and semantic search to detect Korean and English slang and recommend context-appropriate responeses.
  
 ## Current Scope
  
