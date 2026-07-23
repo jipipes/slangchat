@@ -11,7 +11,8 @@ Slangchat은 규칙 기반 정규화, 형태소 분석, 사전 매칭 및 시맨
 - 강조 접두사 정규화 및 표제어·변형 사전 탐지
 - Kiwi 형태소 분석 기반 한국어 활용형 탐지
 - 하이브리드 슬랭 탐지(시맨틱 검색 구현 예정)
-- FastAPI와 Streamlit 데모(구현 예정)
+- FastAPI 기반 `/detect` API
+- Streamlit 데모(구현 예정)
 - Precision/Recall/F1 및 응답시간 평가(구현 예정)
 
 ## 데이터 검증
@@ -27,3 +28,17 @@ python3 -m scripts.validate_data data/slang.json
 ```bash
 python3 -m unittest discover -s tests -v
 ```
+
+## API 실행
+
+```bash
+uvicorn slangchat.api.app:app --reload
+```
+
+POST /detect에 텍스트를 보내면 탐지된 은어 목록을 반환합니다.
+```bash
+curl -X POST http://127.0.0.1:8000/detect \
+  -H "Content-Type: application/json" \
+  -d '{"text": "That explanation is SUS!"}'
+```
+Swagger UI는 http://127.0.0.1:8000/docs에서 확인할 수 있습니다.
